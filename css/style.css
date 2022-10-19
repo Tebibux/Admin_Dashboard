@@ -11,29 +11,42 @@
 	display: grid;
 	grid-template-columns: 1fr 4fr;
 	grid-template-rows: 1fr 6fr;
+	gap: 10px;
 }
 
 /* header starts here */
 .header {
-	display: grid;
 	background-color: aquamarine;
 	grid-column: 2/-1;
 	grid-row: 1/2;
-
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 2fr;
+	gap: 10px;
 }
 
+.top-header {
+	background-color: rgb(177, 177, 177);
+	grid-column: 1;
+}
+.bottom_header{
+	background-color: rgb(163, 88, 88);
+
+}
 
 
 /* header ends here */
 .sidebar {
 	display: grid;
 	grid-template-rows: 1fr 4fr 2fr 5fr;
-	background-color: rgba(0, 139, 151, 0.4);
+	background-color: rgba(11, 71, 77, 0.25);
 	grid-column: 1/2;
 	grid-row: 1/-1;
-	color: white;
+	color: rgba(59, 56, 56, 0.87);
 	font-weight: bold;
-
+	box-shadow: 8px 0px 5px 0px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 8px 0px 5px 0px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 8px 0px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
 .logo {
@@ -41,7 +54,7 @@
 	align-items: center;
 	justify-content: center;
 	margin: 25px;
-	box-shadow: 0px 0 5px 0px rgba(0,0,0,0.09);
+	box-shadow: 0px 0 5px 0px rgba(0, 0, 0, 0.09);
 }
 
 .logo>.box {
@@ -73,7 +86,7 @@
 	background-color: rgba(240, 248, 255, 0.4);
 	padding-right: 24px;
 	padding-left: 8px;
-	box-shadow: 0px 0 5px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 0 5px 0px rgba(0, 0, 0, 0.5);
 
 }
 
